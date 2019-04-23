@@ -1,0 +1,135 @@
+.table{
+    display: table;
+    width: 100%;
+    float: left;
+    
+}
+
+
+.cell{
+    width: 100%;
+    float: left;
+    display: table-cell;
+}
+
+.month{
+    display: table;
+    width: 75%;
+    height: 80%;
+    float: left;
+    border: 2px solid black;
+    padding: 2px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+.monthName{
+    display: table;
+    width: 100%;
+    float: left;
+    height: 10%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    
+}
+
+.week{
+    display: table;
+    width: 100%;
+    float: left;
+    height: 18%;
+    
+}
+
+.day{
+    width: 14.28%;
+    height: 100%;
+    float: left;
+    display: table-cell;
+}
+/* .day:hover{
+    background-color: rgb(218, 218, 218);
+} */
+.day2{
+    width: 14.28%;
+    height: 100%;
+    float: left;
+    display: table-cell;
+    background-color: rgb(232, 237, 248);
+    
+}
+/* .day2:hover{
+    background-color: rgb(218, 218, 218);
+} */
+
+p{
+    margin: 0%;
+}
+
+
+
+.dayOfWeek{
+    width: 40%;
+    float: left;
+    display: table-cell;
+    padding-left: 5px
+}
+
+.numberOfDay{
+    width: 50%;
+    float: left;
+    display: table-cell;
+    text-align: right;
+}
+
+.dayComment{
+   height: 100%;
+}
+
+.dayComment:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.modals{
+    position: fixed;
+    width: 35rem;
+    height: 35rem;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2vw 4vw 0 rgba(0, 0, 0, 0.497), 0 2vw 4vw 0 rgba(0, 0, 0, 0.585);
+    border-radius: 2.5rem;
+    border: solid black 5px
+    
+  }
+
+  .headerModal{
+    width: 80%;
+    float: left;
+    display: table-cell;
+    background-color:  rgb(232, 237, 248);
+    font-size: 1.5rem;
+    height: 3rem;
+    border-radius: 2.2rem 0rem 0rem 0rem;
+    padding-top: 0.5rem;
+    
+
+}
+
+.closes{
+    width: 20%;
+    float: left;
+    display: table-cell;
+    background-color:  red;
+    font-size: 1.5rem;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    border-radius: 0 2.2rem 0rem 0rem;
+    padding-top: 0.5rem;
+}

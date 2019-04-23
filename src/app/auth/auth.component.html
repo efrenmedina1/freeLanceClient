@@ -1,0 +1,52 @@
+
+  <h2>Please login or sign up to use the sites member functions</h2>
+
+
+
+
+        <form class="my-form" (submit)="signUp($event)">
+       
+           
+              <h2><b>Sign Up</b></h2>
+         
+            
+                       <label>Email</label>
+                        <input  name="Username" minlength="6" required >
+                  
+                        <label>Password</label>
+                        
+                        <input  name="password" type="password" minlength="6" required >
+
+                        <label>First Name</label>
+                        
+                        <input  name="first" type="first" minlength="2" required >
+
+                        <label>Last Name</label>
+                        
+                        <input  name="last" type="last" minlength="2" required >
+               
+                  <button color="gray">Sign Up</button>
+              
+      
+    </form>
+
+    <h2><b>Login</b></h2>
+    <form  (submit)="loginUser($event)">
+       
+       
+     
+                   <label>Username</label>
+
+                   <input  name="Username">
+              
+                   <label>Password</label>
+                    
+                   <input  name="password" type="password" >
+
+                   
+        
+      
+              <button color="gray">Login</button>
+         
+</form>
+

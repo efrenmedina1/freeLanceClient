@@ -1,0 +1,180 @@
+<div class="compBody">
+
+    <div class="month" id="{{month.id}}" *ngFor="let month of month | paginate: { itemsPerPage: 1, currentPage: p }">
+        <div class="monthName">
+          Month: {{month.month}}
+        </div>
+        <div class="week">
+            <div class="day" >
+              <div class="dayOfWeek" >Sun </div> <div class="numberOfDay" > {{month.day1}} </div>
+              <div class="dayComment" (click)="commentEdit($event)" id="day1" > {{month.day1Comment}} </div>
+            </div>
+            <div class="day2" >
+              <div class="dayOfWeek" >Mon </div> <div class="numberOfDay" > {{month.day2}} </div>
+              <div class="dayComment" (click)="commentEdit($event)" id="day2" > {{month.day2Comment}} </div>
+            </div>
+            <div class="day" >
+              <div class="dayOfWeek" >Tue </div> <div class="numberOfDay" > {{month.day3}} </div>
+              <div class="dayComment" (click)="commentEdit($event)" id="day3" > {{month.day3Comment}} </div>
+            </div>
+            <div class="day2" >
+              <div class="dayOfWeek" >Wed </div> <div class="numberOfDay" > {{month.day4}} </div>
+              <div class="dayComment" (click)="commentEdit($event)" id="day4" > {{month.day4Comment}} </div>
+            </div>
+            <div class="day" >
+              <div class="dayOfWeek" >Thu </div> <div class="numberOfDay" > {{month.day5}} </div>
+              <div class="dayComment" (click)="commentEdit($event)" id="day5" > {{month.day5Comment}} </div>
+            </div>
+            <div class="day2" >
+              <div class="dayOfWeek" >Fri </div> <div class="numberOfDay" > {{month.day6}} </div>
+              <div class="dayComment" (click)="commentEdit($event)" id="day6" > {{month.day6Comment}} </div>
+            </div>
+            <div class="day" >
+              <div class="dayOfWeek" >Sat</div> <div class="numberOfDay" > {{month.day7}} </div>
+              <div class="dayComment" (click)="commentEdit($event)" id="day7" > {{month.day7Comment}} </div>
+            </div>
+        </div>
+        
+        <div class="week">
+            <div class="day2" >
+                <div class="dayOfWeek" >Sun</div> <div class="numberOfDay" > {{month.day8}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day8" > {{month.day8Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Mon</div> <div class="numberOfDay" > {{month.day9}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day9" > {{month.day9Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Tue</div> <div class="numberOfDay" > {{month.day10}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day10" > {{month.day10Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Wed</div> <div class="numberOfDay" > {{month.day11}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day11" > {{month.day11Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Thu</div> <div class="numberOfDay" > {{month.day12}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day12" > {{month.day12Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Fri</div> <div class="numberOfDay" > {{month.day13}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day13" > {{month.day13Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Sat</div> <div class="numberOfDay" > {{month.day14}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day14" > {{month.day14Comment}} </div>
+              </div>
+        </div>
+
+        <div class="week">
+            <div class="day" >
+                <div class="dayOfWeek" >Sun</div> <div class="numberOfDay" > {{month.day15}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day15" > {{month.day15Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Mon</div> <div class="numberOfDay" > {{month.day16}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day16" > {{month.day16Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Tue</div> <div class="numberOfDay" > {{month.day17}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day17" > {{month.day17Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Wed</div> <div class="numberOfDay" > {{month.day18}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day18" > {{month.day18Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Thu</div> <div class="numberOfDay" > {{month.day19}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day19" > {{month.day19Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Fri</div> <div class="numberOfDay" > {{month.day20}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day20" > {{month.day20Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Sat</div> <div class="numberOfDay" > {{month.day21}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day21" > {{month.day21Comment}} </div>
+              </div>
+        </div>
+
+        <div class="week">
+                      <div class="day2" >
+                <div class="dayOfWeek" >Sun</div> <div class="numberOfDay" > {{month.day22}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day22" > {{month.day22Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Mon</div> <div class="numberOfDay" > {{month.day23}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day23" > {{month.day23Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Tue</div> <div class="numberOfDay" > {{month.day24}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day24" > {{month.day24Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Wed</div> <div class="numberOfDay" > {{month.day25}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day25" > {{month.day25Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Thu</div> <div class="numberOfDay" > {{month.day26}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day26" > {{month.day26Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Fri</div> <div class="numberOfDay" > {{month.day27}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day27" > {{month.day27Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Sat</div> <div class="numberOfDay" > {{month.day28}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day28" > {{month.day28Comment}} </div>
+              </div>
+        </div>
+
+        <div class="week">
+            <div class="day" >
+                <div class="dayOfWeek" >Sun</div> <div class="numberOfDay" > {{month.day29}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day29" > {{month.day29Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Mon</div> <div class="numberOfDay" > {{month.day30}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day30" > {{month.day30Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Tue</div> <div class="numberOfDay" > {{month.day31}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day31" > {{month.day31Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Wed</div> <div class="numberOfDay" > {{month.day32}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day32" > {{month.day32Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Thu</div> <div class="numberOfDay" > {{month.day33}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day33" > {{month.day33Comment}} </div>
+              </div>
+              <div class="day2" >
+                <div class="dayOfWeek" >Fri</div> <div class="numberOfDay" > {{month.day34}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day34" > {{month.day34Comment}} </div>
+              </div>
+              <div class="day" >
+                <div class="dayOfWeek" >Sat</div> <div class="numberOfDay" > {{month.day35}} </div>
+                <div class="dayComment" (click)="commentEdit($event)" id="day35" > {{month.day35Comment}} </div>
+              </div>
+        </div>
+    </div>
+
+    
+
+</div>
+<pagination-controls class="myPagination"
+(pageChange)="p = $event" maxSize="4">
+</pagination-controls>
+
+<div class="modals"  *ngIf="modal" >
+  <div class="headerModal" > &nbsp;&nbsp; Profile</div>  <div class="closes" (click)="modalFalse($event)" > Close </div>
+  <div>{{month[activeMonth-1].month}}  </div> 
+
+  
+  
+
+
+   
+
+</div>

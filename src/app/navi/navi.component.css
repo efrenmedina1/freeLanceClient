@@ -1,0 +1,21 @@
+.table{
+    display: table;
+    width: 10%;
+    background-color: black;
+    float: left;
+    
+}
+
+
+.cell{
+    width: 100%;
+    float: left;
+    display: table-cell;
+    height: 15%;
+    background-color: aqua;
+    text-align: center;
+}
+
+.cell:hover{
+    background-color: rgb(173, 238, 238);
+}
