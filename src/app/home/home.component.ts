@@ -10,7 +10,7 @@ import { APIURL } from '../../environments/environment.prod';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private roleService: RoleService, public http: HttpClient) { }
+  constructor(public roleService: RoleService, private http: HttpClient) { }
 
   ngOnInit() {
     this.roleService.getToken()
