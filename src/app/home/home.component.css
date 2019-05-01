@@ -1,0 +1,64 @@
+.table{
+    display: table;
+    width: 100%;
+    float: left;
+    
+}
+
+
+.profile{
+    width: 20%;
+    float: left;
+    display: table-cell;
+    background-color: rgb(201, 216, 250);
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.profilePic{
+    width: 100%;
+}
+
+.profileText{
+    padding: 0.5rem;
+    
+}
+
+.body{
+    width: 80%;
+    float: left;
+    display: table-cell;
+    height: 100vh;
+    text-align: center;
+    overflow-y:scroll;
+}
+
+.section1{
+    width: 70%;
+    float: left;
+    display: table-cell;
+    height: 30vh;
+    text-align: center;
+    margin: 2rem 15% 0% 10%;
+    background-color: white;
+    border: solid white 5px;
+    border-radius: 4px;
+    
+}
+
+.sectionImage{
+    height: 30vh;
+    float: left;
+    display: table-cell;
+    width: 30%;
+    
+}
+
+.sectionText{
+    height: 30vh;
+    float: left;
+    display: table-cell;
+    width: 70%;
+   
+}

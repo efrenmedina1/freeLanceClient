@@ -14,7 +14,7 @@ export class RoleService {
   public token = '';
   public topic = '';
   public email = '';
-  public name = '';
+  public name = 'Guest';
 
   constructor() { }
   
@@ -22,7 +22,7 @@ export class RoleService {
     this.role = sessionStorage.getItem('role')
    this.token = sessionStorage.getItem('token')
    this.topic = sessionStorage.getItem('topic')
-   this.email = sessionStorage.getItem('email')
+   this.name = sessionStorage.getItem('name')
    if (this.role == "admin" ) {
     this.adminRole = true;
     this.userRole = true;

@@ -8,7 +8,21 @@
   <div class="cell" routerLink="/chat" >
     <h1>Messages</h1>
   </div>
-  <div class="cell" >
+  <div class="cell" routerLink="/contact" >
     <h1>Contact</h1>
   </div>
+  <div class="cell" *ngIf="roleService.noRole" (click)="modalTrue($event)" >
+    <h1>Login</h1>
+  </div>
+  <div class="cell"  *ngIf="roleService.userRole" (click)="logout($event)" >
+    <h1>Logout</h1>
+  </div>
 </div>
+
+
+
+<div class="modals"  *ngIf="modal" >
+    <div class="headerModal" > &nbsp;&nbsp; Login</div>  <div class="closes" (click)="modalFalse($event)" > Close </div>
+    <app-auth></app-auth>
+    
+    </div>

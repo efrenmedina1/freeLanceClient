@@ -23,6 +23,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: white;
 
     
 }
@@ -40,7 +41,7 @@
     display: table;
     width: 100%;
     float: left;
-    height: 18%;
+    height: 15.1%;
     
 }
 
@@ -103,7 +104,6 @@ p{
     transform: translate(-50%, -50%);
     background: rgb(255, 255, 255);
     box-shadow: 0 2vw 4vw 0 rgba(0, 0, 0, 0.497), 0 2vw 4vw 0 rgba(0, 0, 0, 0.585);
-    border-radius: 2.5rem;
     border: solid black 5px
     
   }
@@ -115,7 +115,6 @@ p{
     background-color:  rgb(232, 237, 248);
     font-size: 1.5rem;
     height: 3rem;
-    border-radius: 2.2rem 0rem 0rem 0rem;
     padding-top: 0.5rem;
     
 
@@ -130,6 +129,43 @@ p{
     height: 3rem;
     text-align: center;
     color: white;
-    border-radius: 0 2.2rem 0rem 0rem;
     padding-top: 0.5rem;
+}
+
+.closes:hover{
+    cursor: pointer;
+    background-color:  rgb(255, 87, 87);
+}
+
+.modalBody{
+    padding: 0.5rem;
+    height: 30.4rem;
+    overflow-y:scroll;
+
+}
+
+.modalMonth{
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+.modalHeader{
+    font-size: 150%;
+    font-weight: bold;
+
+}
+
+.modalMessage{
+    margin-bottom: 2rem;
+
+
+}
+
+.pagination{
+    background-color: white;
+    width: 30%;
+    margin-left: 10%;
+    border-radius: 4px;
 }

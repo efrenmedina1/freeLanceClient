@@ -12,10 +12,59 @@
     float: left;
     display: table-cell;
     height: 15%;
-    background-color: aqua;
+    background-color: rgb(201, 216, 250);
     text-align: center;
 }
 
 .cell:hover{
-    background-color: rgb(173, 238, 238);
+    background-color: white;
+    cursor: pointer;
+}
+
+.naviComp{
+    display: table;
+    width: 10%;
+    background-color: black;
+    position: fixed;
+    top: 0; 
+    right: 20px;
+    
+}
+
+.modals{
+    position: fixed;
+    width: 35rem;
+    height: 35rem;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2vw 4vw 0 rgba(0, 0, 0, 0.497), 0 2vw 4vw 0 rgba(0, 0, 0, 0.585);
+    border: solid black 5px
+    
+  }
+
+  .headerModal{
+    width: 80%;
+    float: left;
+    display: table-cell;
+    background-color:  rgb(232, 237, 248);
+    font-size: 1.5rem;
+    height: 3rem;
+    padding-top: 0.5rem;
+    
+
+}
+
+.closes{
+    width: 20%;
+    float: left;
+    display: table-cell;
+    background-color:  red;
+    font-size: 1.5rem;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    padding-top: 0.5rem;
 }

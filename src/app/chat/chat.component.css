@@ -1,5 +1,66 @@
-.body{
+.table{
     display: table;
-    width: 90%;
+    width: 100%;
     float: left;
+    
+}
+
+
+.conversations{
+    width: 20%;
+    float: left;
+    display: table-cell;
+    background-color: rgb(201, 216, 250);
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.conversationList{
+    width: 80%;
+    background-color: white;
+    height: 3rem;
+    margin: 10%;
+   
+}
+
+.conversationList:hover{
+    background-color: rgb(248, 157, 20);
+}
+
+.messages{
+    width: 80%;
+    float: left;
+    display: table-cell;
+    height: 100vh;
+}
+
+.messageList{
+    float: left;
+    display: table-cell;
+    width: 60%;
+    background-color: rgb(201, 216, 250);
+    height: 3rem;
+    margin: 2rem 10% 0% 0%;
+    background-color: white;
+}
+
+.messageName{
+    float: left;
+    display: table-cell;
+    width: 10%;
+    background-color: rgb(201, 216, 250);
+    height: 3rem;
+    margin: 2rem 0% 0% 10%;
+   
+}
+
+.postMessage{
+    float: left;
+    display: table-cell;
+    width: 60%;
+    height: 3rem;
+    margin: 2rem 0% 0% 10%;
+    
+   
 }
