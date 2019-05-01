@@ -1,5 +1,5 @@
 {
-  "name": "freelancecalendarClient",
+  "name": "freelancecalendar-client",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
