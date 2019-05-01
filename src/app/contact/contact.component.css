@@ -30,9 +30,10 @@
     height: 100%;
     float: left;
     display: table-cell;
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
 }
 
 .contactInfoWrapper{
     padding: 2rem;
 }
+

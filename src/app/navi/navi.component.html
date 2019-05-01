@@ -21,7 +21,7 @@
 
 
 
-<div class="modals"  *ngIf="modal" >
+<div class="modals"  *ngIf="roleService.loginModal" >
     <div class="headerModal" > &nbsp;&nbsp; Login</div>  <div class="closes" (click)="modalFalse($event)" > Close </div>
     <app-auth></app-auth>
     

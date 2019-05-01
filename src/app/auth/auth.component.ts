@@ -11,6 +11,8 @@ import { APIURL } from '../../environments/environment.prod';
 export class AuthComponent implements OnInit {
 
   constructor(private router: Router, public roleService: RoleService) { }
+  public signup = false;
+  public login = true;
 
   ngOnInit() {
     this.roleService.getToken()
@@ -57,7 +59,7 @@ if(json == undefined) {
   this.roleService.token = json.sessionToken
   this.roleService.name = json.user.first
 
-  this.router.navigate(['home'])
+  this.roleService.loginModal = false
   window.alert("Logged in");
 } 
 }
@@ -67,7 +69,7 @@ if(json == undefined) {
 .then(response =>  sessionStorage.setItem('token', this.roleService.token) )
 .then(response =>  sessionStorage.setItem('name', this.roleService.name) )
 .then(response =>  this.ngOnInit() )
-.then(response =>  this.router.navigate(['home']) )
+.then(response =>  this.roleService.loginModal = false )
 } else{
   window.alert("email and password must be longer then 5 characters");
 }
@@ -111,7 +113,7 @@ headers: new Headers({
   this.roleService.token = json.sessionToken
   this.roleService.name = json.user.first
 
-  this.router.navigate(['home'])
+  this.roleService.loginModal = false
   window.alert("Logged in");
 }
 } )
@@ -122,10 +124,20 @@ headers: new Headers({
 .then(response =>  sessionStorage.setItem('token', this.roleService.token) )
 .then(response =>  sessionStorage.setItem('name', this.roleService.name) )
 .then(response =>  this.ngOnInit() )
-.then(response =>  this.router.navigate(['profile']) )
+.then(response =>  this.roleService.loginModal = false )
 
 
 
+}
+
+signupToggle(e) {
+  if( this.signup == true ) {
+    this.signup = false
+    this.login = true
+  } else {
+    this.signup = true
+    this.login = false
+  }
 }
 
 }

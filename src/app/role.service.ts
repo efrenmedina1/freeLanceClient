@@ -9,6 +9,7 @@ export class RoleService {
   public userRole = false;
   public noRole = true;
   public banRole = false;
+  public loginModal = false;
 
   public role = '';
   public token = '';

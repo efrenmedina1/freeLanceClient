@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {RoleService } from "../role.service";
+import { flatten } from '@angular/core/src/render3/util';
 
 @Component({
   selector: 'app-navi',
@@ -29,14 +30,16 @@ export class NaviComponent implements OnInit {
   modalFalse(e) {
     e.preventDefault(); 
   
-    this.modal = false;
+    this.roleService.loginModal = false;
   }
 
   
   modalTrue(e) {
     e.preventDefault(); 
   
-    this.modal = true;
+    this.roleService.loginModal = true;
   }
+
+
 
 }

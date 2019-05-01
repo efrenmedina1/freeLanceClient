@@ -70,7 +70,11 @@ p{
     margin: 0%;
 }
 
-
+.dayHeader{
+    display: table;
+    width: 100%;
+    height: 1rem;
+}
 
 .dayOfWeek{
     width: 40%;
@@ -84,10 +88,12 @@ p{
     float: left;
     display: table-cell;
     text-align: right;
+    
 }
 
 .dayComment{
    height: 100%;
+   width: 100%
 }
 
 .dayComment:hover{

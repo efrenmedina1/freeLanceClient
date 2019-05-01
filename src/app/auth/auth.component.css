@@ -1,0 +1,17 @@
+input{
+    background-color: rgb(255, 165, 0);
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0px;
+    font-size: 1rem;
+    border-radius: 2px; 
+  }
+
+  .auth{
+      padding: 1rem;
+  }
+
+  .label{
+    padding-bottom: 1rem;
+}
