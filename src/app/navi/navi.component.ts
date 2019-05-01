@@ -10,7 +10,7 @@ import { flatten } from '@angular/core/src/render3/util';
 })
 export class NaviComponent implements OnInit {
 
-  constructor(private router: Router, private roleService: RoleService) { }
+  constructor(private router: Router, public roleService: RoleService) { }
   public modal = false;
 
   ngOnInit() {

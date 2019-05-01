@@ -18,7 +18,7 @@ export class CalendarComponent implements OnInit {
   public modalEvents= [];
   public p = 5;
 
-  constructor(private roleService: RoleService, private http: HttpClient) { }
+  constructor(public roleService: RoleService, private http: HttpClient) { }
 
   ngOnInit() {
     this.roleService.getToken()

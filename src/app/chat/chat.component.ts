@@ -10,7 +10,7 @@ import { APIURL } from '../../environments/environment.prod';
 })
 export class ChatComponent implements OnInit {
 
-  constructor(private roleService: RoleService, private http: HttpClient) { }
+  constructor(public roleService: RoleService, private http: HttpClient) { }
 
   public conversation = [];
   public message = [];
