@@ -2,11 +2,15 @@
   <div class="conversations">
         
         <div *ngFor="let conversation of conversation">
-            <div class="conversationList" id="{{conversation.id}}" (click)="getMessages($event)" >{{ conversation.user2 }} 
+            <div class="conversationList" id="{{conversation.id}}" (click)="getMessages($event)" >
+              
+              {{ conversation.user2 }} 
+              <div *ngIf="roleService.adminRole"> 
                <form (submit)="delete($event)">
                   <input id="{{conversation.id}}" type="submit" value="Delete">
 
                 </form>
+              </div>
             </div>
         </div>
 
