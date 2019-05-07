@@ -110,4 +110,51 @@ getMessages(e) {
     window.alert("Please input a comment");
   }
   }
+
+  createTopic(e) {
+    e.preventDefault(); 
+    let comment = e.target.elements[0].value;
+    
+    
+    console.log(comment);
+    console.log(this.roleService.token);
+    if(comment.length > 8) {
+    fetch(`${APIURL}/comments/`, {
+      method: 'POST',
+      body: JSON.stringify(
+        {
+          "description": comment,
+          "username": this.roleService.name
+          
+          }
+      ),
+      headers: new Headers({
+        'Content-Type': 'application/json',
+        'Authorization': this.roleService.token
+      })
+    })
+    .then((res) => e.target.elements[0].value = "" )
+    .then((res) => this.ngOnInit() )
+  } else{
+    window.alert("Topic must be longer then eight characters");
+  }
+} 
+
+delete(e) {
+  e.preventDefault();
+  console.log('delete');
+  var delID = e.target.elements[0].id;
+  var token = this.roleService.token;
+  console.log(token);
+  console.log(delID);
+
+  fetch(`${APIURL}/conversation/${delID}`, {
+    method: 'DELETE',
+    headers: new Headers({
+      Authorization: token
+    })
+  })
+    .then((res) => this.ngOnInit() )
+  console.log("delete")
+}
 }

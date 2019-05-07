@@ -2,8 +2,38 @@
   <div class="conversations">
         
         <div *ngFor="let conversation of conversation">
-            <div class="conversationList" id="{{conversation.id}}" (click)="getMessages($event)" >{{ conversation.username1 }} vs {{ conversation.username2 }}</div>
+            <div class="conversationList" id="{{conversation.id}}" (click)="getMessages($event)" >{{ conversation.user2 }} 
+               <form (submit)="delete($event)">
+                  <input id="{{conversation.id}}" type="submit" value="Delete">
+
+                </form>
+            </div>
         </div>
+
+        <div *ngIf="roleService.adminRole"  > 
+          <form (submit)="createTopic($event)">
+              <div class="table">
+              <div class="input1"> 
+                <label>Create Your Topic</label>   
+              </div>
+        
+              <div class="input2">
+                  <textarea   
+                  class="commentBox" 
+                  placeholder="Your topic"
+                  required
+                  data-validation-required-message="Please leave a message"
+                  name="message"
+                  minlength=20
+                  maxlength=35>
+                </textarea>
+              </div>
+              </div>
+              <div class="input3" > 
+              <input class="dogButton" type="submit" value="Create Topic">
+            </div>
+            </form>
+          </div>
 
   </div>
   <div class="messages">
