@@ -43,7 +43,8 @@
           <div class="messageList" id="{{message.id}}" >{{ message.message }} </div>
       </div>
 
-      <div class="postMessage" *ngIf="displayMessage" > 
+      <div class="postMessage" *ngIf="roleService.userRole" > 
+
       <form (submit)="createMessage($event)">
           
              <div class="input1" >
