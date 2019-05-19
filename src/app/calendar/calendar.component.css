@@ -50,6 +50,7 @@
     height: 100%;
     float: left;
     display: table-cell;
+    overflow: visible;
 }
 /* .day:hover{
     background-color: rgb(218, 218, 218);
@@ -60,6 +61,7 @@
     float: left;
     display: table-cell;
     background-color: rgb(232, 237, 248);
+    overflow: visible;
     
 }
 /* .day2:hover{
@@ -171,7 +173,65 @@ p{
 
 .pagination{
     background-color: white;
-    width: 30%;
+    width: 50%;
     margin-left: 10%;
     border-radius: 4px;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .pagination{
+        font-size: 1.5rem;
+    }
+    .month{
+        font-size: .8rem
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .pagination{
+        font-size: 1rem;
+    }
+    .month{
+        font-size: .7rem
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    
+    .month{
+        font-size: .6rem
+    }
+    .week{
+        height: 15.05%;       
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .month{
+        font-size: 0.5rem
+    }
+    
+    
+
+    .pagination{
+       font-size: 0.5rem;
+       width: 70%;
+    }
+    
+    .modals{
+        position: fixed;
+        width: 20rem;
+        height: 35rem;
+        z-index: 15;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(255, 255, 255);
+        box-shadow: 0 2vw 4vw 0 rgba(0, 0, 0, 0.497), 0 2vw 4vw 0 rgba(0, 0, 0, 0.585);
+        border: solid black 5px
+        
+      }
 }

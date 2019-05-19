@@ -1,24 +1,58 @@
-<div class="naviComp" >
-  <div class="cell" routerLink="/home" >
-      <h1>Home</h1>
-  </div>
-  <div class="cell" routerLink="/calendar" >
-    <h1>Schedule</h1>
-  </div>
-  <div class="cell" routerLink="/chat" >
-    <h1>Messages</h1>
-  </div>
-  <div class="cell" routerLink="/contact" >
-    <h1>Contact</h1>
-  </div>
-  <div class="cell" *ngIf="roleService.noRole" (click)="modalTrue($event)" >
-    <h1>Login</h1>
-  </div>
-  <div class="cell"  *ngIf="roleService.userRole" (click)="logout($event)" >
-    <h1>Logout</h1>
-  </div>
+<div class="desktop">
+    <div class="naviComp" >
+      <div class="cell" routerLink="/home" >
+          <h1>Home</h1>
+      </div>
+      <div class="cell" routerLink="/calendar" >
+        <h1>Schedule</h1>
+      </div>
+      <div class="cell" routerLink="/chat" >
+        <h1>Messages</h1>
+      </div>
+      <div class="cell" routerLink="/contact" >
+        <h1>Contact</h1>
+      </div>
+      <div class="cell" *ngIf="roleService.noRole" (click)="modalTrue($event)" >
+        <h1>Login</h1>
+      </div>
+      <div class="cell"  *ngIf="roleService.userRole" (click)="logout($event)" >
+        <h1>Logout</h1>
+      </div>
+    </div>
 </div>
 
+<div class="moblie">
+
+    <div class="naviComp" *ngIf="menuOff" >
+        <div class="cell" (click)="menuOnToggle($event)" >
+          <h1>Menu</h1>
+        </div>
+    </div>
+  <div class="naviComp" *ngIf="menuOn" >
+      <div class="cell" routerLink="/home" >
+          <h1>Home</h1>
+      </div>
+      <div class="cell" routerLink="/calendar" >
+        <h1>Schedule</h1>
+      </div>
+      <div class="cell" routerLink="/chat" >
+        <h1>Messages</h1>
+      </div>
+      <div class="cell" routerLink="/contact" >
+        <h1>Contact</h1>
+      </div>
+      <div class="cell" *ngIf="roleService.noRole" (click)="modalTrue($event)" >
+        <h1>Login</h1>
+      </div>
+      <div class="cell"  *ngIf="roleService.userRole" (click)="logout($event)" >
+        <h1>Logout</h1>
+      </div>
+      <div class="cell" (click)="menuOffToggle($event)" >
+          <h1>⮝</h1>
+        </div>
+  </div>
+
+</div>
 
 
 <div class="modals"  *ngIf="roleService.loginModal" >

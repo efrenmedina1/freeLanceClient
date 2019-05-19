@@ -64,3 +64,35 @@
     
    
 }
+@media only screen and (max-width: 1000px) {
+
+    .conversationList{
+        font-size: 0.8rem;
+       
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .conversationList{
+        font-size: 0.7rem;
+       
+    }
+
+    .messageList{
+        width: 65%;
+        background-color: rgb(201, 216, 250);
+        height: 3rem;
+        margin: 2rem 5% 0% 0%;
+        background-color: white;
+        font-size: 0.7rem;
+    }
+    
+    .messageName{
+        width: 20%;
+        background-color: rgb(201, 216, 250);
+        height: 3rem;
+        margin: 2rem 0% 0% 10%;
+        font-size: 0.7rem;
+       
+    }
+}

@@ -14,6 +14,7 @@
     height: 15%;
     background-color: rgb(201, 216, 250);
     text-align: center;
+    margin-left: 5px;
 }
 
 .cell:hover{
@@ -67,4 +68,48 @@
     text-align: center;
     color: white;
     padding-top: 0.5rem;
+}
+
+
+
+.moblie{
+    display: none
+}
+
+@media only screen and (max-width: 1000px) {
+    h1{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    h1{
+        font-size: 0.8rem;
+    }
+
+    .naviComp{
+        right: 30px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+
+    .moblie{
+        display: inline
+    }
+    
+.modals{
+    width: 20rem;
+    
+  }
+
+  .naviComp{
+      z-index: 16;
+  }
+
 }

@@ -12,8 +12,22 @@ export class NaviComponent implements OnInit {
 
   constructor(private router: Router, public roleService: RoleService) { }
   public modal = false;
+  public menuOn = false;
+  public menuOff = true;
 
   ngOnInit() {
+  }
+
+  menuOffToggle(e) {
+    e.preventDefault(); 
+    this.menuOff = true;
+    this.menuOn = false;
+  }
+
+  menuOnToggle(e) {
+    e.preventDefault(); 
+    this.menuOff = false;
+    this.menuOn = true;
   }
 
   logout(e) {
