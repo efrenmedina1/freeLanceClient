@@ -29,16 +29,16 @@
         </div>
     </div>
   <div class="naviComp" *ngIf="menuOn" >
-      <div class="cell" routerLink="/home" >
+      <div class="cell" routerLink="/home" (click)="menuOffToggle($event)" >
           <h1>Home</h1>
       </div>
-      <div class="cell" routerLink="/calendar" >
+      <div class="cell" routerLink="/calendar" (click)="menuOffToggle($event)" >
         <h1>Schedule</h1>
       </div>
-      <div class="cell" routerLink="/chat" >
+      <div class="cell" routerLink="/chat" (click)="menuOffToggle($event)" >
         <h1>Messages</h1>
       </div>
-      <div class="cell" routerLink="/contact" >
+      <div class="cell" routerLink="/contact" (click)="menuOffToggle($event)" >
         <h1>Contact</h1>
       </div>
       <div class="cell" *ngIf="roleService.noRole" (click)="modalTrue($event)" >
